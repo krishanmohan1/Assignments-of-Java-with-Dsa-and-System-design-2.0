@@ -1,0 +1,38 @@
+Git and Github Part-2 Assignment Solution
+1. To check whether the git is available in the system or not just open the system , Open the command prompt and run the cmd ,
+(git --version   or git -v) 
+if there is git then it will show the verion of git which is installed , otherwise  it will show ,  bash: git:command not found.
+
+
+2. To initialize the git repo , go to git bash open the folder withwhich you want to work then , go inside the folder , run the git command (git init)
+It will initialize the repo.
+
+3. To tell git about name and email, 
+open the repository run the command for name and email repectively 
+
+git config –global user.name “name”
+Git config –global user.email “email.com”
+
+And if you want to check your email and name 
+
+Run command 
+globally
+(git config –global –list)
+
+Locally
+(git config –list)
+
+4. To add file to the stagging area run command 
+(git add filename)
+5. To remove a file from stagging area run command 
+(git rm –cached -r filename)
+6. After adding the file to stagginig area just run the command 
+(git commit -m “suitable message”)
+7. To send the changes to the remote repository , first add the origin doing commit and configureyour name and email, create a branch and then add origin then push it to the origin
+git branch -M branchname
+git remote add origin <url of repository>
+git push -u origin branchname
+
+
+8. Difference between clone and pull is ,
+in clone you’re the whole copy of all files , but if one developer make changes in any file then it will not reflect in the second developers pc , then if he run( git pull) then the changes will also reflect to the developer 2 
