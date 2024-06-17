@@ -1,0 +1,60 @@
+﻿Module-12 Assignment Solution
+
+
+1.  How to Create an Object in Java
+* To create an object in Java, you use the new keyword along with the constructor of the class. For example:
+ClassName objectName = new ClassName();
+
+
+
+
+2. What is the Use of a new Keyword in Java
+   1. The new keyword is used to create new objects. It dynamically allocates memory for the object and returns a reference to it.
+
+
+3. Different Types of Variables in Java
+   1. Local Variables: Declared inside a method, constructor, or block. They are created when the method, constructor, or block is entered and destroyed after exit.
+   2. Instance Variables: Declared inside a class but outside any method, constructor, or block. They are created when an object is instantiated and destroyed when the object is destroyed.
+   3. Static Variables: Declared with the static keyword inside a class but outside any method, constructor, or block. They are created when the program starts and destroyed when the program stops.
+
+
+4. Difference Between Instance Variable and Local Variable
+   1. Instance Variable:
+      1. Declared inside a class but outside any method, constructor, or block.
+      2. They are part of an object and hence, each object has its own copy.
+      3. They are initialized when the object is created.
+      4. Scope is within the object.
+   2. Local Variable:
+      1. Declared inside a method, constructor, or block.
+      2. They are only accessible within the method, constructor, or block in which they are declared.
+      3. They are not part of an object and hence, multiple methods can have local variables with the same name without any conflict.
+      4. Scope is within the method, constructor, or block.
+5. In Which Area Memory is Allocated for Instance Variable and Local Variable
+   1. Instance Variables: Memory is allocated in the heap when the object is created.
+   2. Local Variables: Memory is allocated on the stack when the method is invoked.
+6. Method overloading is a feature that allows a class to have more than one method having the same name, if their parameter lists are different. It is used to increase the readability of the program.
+
+
+
+
+          class MathUtils {
+    // Method with 2 parameters
+    int add(int a, int b) {
+        return a + b;
+    }
+
+
+    // Overloaded method with 3 parameters
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        MathUtils math = new MathUtils();
+        System.out.println(math.add(10, 20)); // Calls method with 2 parameters
+        System.out.println(math.add(10, 20, 30)); // Calls method with 3 parameters
+    }
+}
