@@ -1,0 +1,32 @@
+What is Git?
+Git is a distributed version control system (VCS) used to track changes in source code during software development. It allows multiple developers to work on a project simultaneously without interfering with each other's work.
+
+What do you understand by the term ‘Version Control System’?
+A Version Control System (VCS) is a tool that helps manage changes to source code over time. It records changes, tracks versions, and enables collaboration among multiple developers by merging their contributions. VCS can be centralized (like SVN) or distributed (like Git).
+
+What is GitHub?
+GitHub is a web-based platform that uses Git for version control. It offers a collaborative environment for developers to host and review code, manage projects, and build software together. GitHub also provides additional features like issue tracking, project management, and CI/CD pipelines.
+
+Mention some popular Git hosting services
+Some popular Git hosting services include:
+
+GitHub
+GitLab
+Bitbucket
+SourceForge
+AWS CodeCommit
+Different types of version control systems
+Local Version Control Systems: Track changes on a local machine (e.g., RCS).
+Centralized Version Control Systems (CVCS): Use a central server to store all versions (e.g., Subversion, CVS).
+Distributed Version Control Systems (DVCS): Each user has a complete copy of the repository (e.g., Git, Mercurial).
+What benefits come with using Git?
+Branching and Merging: Easy to create and manage branches.
+Distributed Nature: Each developer has a full repository, enhancing collaboration.
+Speed: Git operations are fast and efficient.
+Security: Secure data through cryptographic hashing.
+Flexibility: Supports various workflows and environments.
+What is a Git repository?
+A Git repository (repo) is a directory that contains all the files and history of a project tracked by Git. It includes all the project's files, commit history, branches, and tags.
+
+How can you initialize a repository in Git?
+To initialize a Git repository, you use the git init command.
