@@ -1,0 +1,31 @@
+﻿Module-13 Assignment Solution
+
+
+1. Default Value of Array for Different Data Types
+* int: 0
+* double: 0.0
+* char: '\u0000' (null character)
+* boolean: false
+* Object references: null
+2. Can You Pass a Negative Number in Array Size?
+No, you cannot pass a negative number as an array size in Java. It will throw a NegativeArraySizeException.
+3. Where Does Array Stored in JVM Memory?
+Arrays in Java are stored in the heap memory, just like other objects.
+4. Disadvantages of Array
+* Fixed size: Once an array is created, its size cannot be changed.
+* Lack of built-in methods: Arrays do not have built-in methods for common operations (e.g., adding, removing elements).
+* Inefficient element insertion/deletion: Inserting or deleting elements can be slow because it may require shifting elements.
+5. What is an Anonymous Array in Java?
+An anonymous array is an array without a reference variable. It's used for immediate use without storing the reference.
+sum(new int[] {1, 2, 3, 4});
+public static void sum(int[] numbers) {
+   int total = 0;
+    for (int number : numbers) {
+        total += number;
+    }
+    System.out.println(total);
+}
+
+
+6. Traversing an array: For loop, enhanced for loop, Arrays.stream(), Iterator.
+7. length vs length(): length is for arrays, length() is for strings.
